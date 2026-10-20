@@ -1,0 +1,71 @@
+clip,label,v1,v2,v2_event
+video102,accident,True,True,stopped_vehicles @ 0.0s
+video145,accident,True,True,stopped_vehicles @ 0.0s
+video164,accident,False,False,
+video157,accident,False,False,
+video108,accident,True,True,stopped_vehicles @ 5.92s
+video193,accident,False,False,
+videox14_3,accident,True,True,stopped_vehicles @ 0.0s
+video14,accident,True,True,stopped_vehicles @ 10.06s
+video188,accident,False,False,
+video100,accident,True,True,sudden_stop @ 10.7s
+video57,accident,False,False,
+video56,accident,False,False,
+video67,accident,True,True,stopped_vehicles @ 10.04s
+videox2_1,accident,False,False,
+videox14_1,accident,True,True,stopped_vehicles @ 0.0s
+video192,accident,True,True,stopped_vehicles @ 0.08s
+video140,accident,True,True,stopped_vehicles @ 2.47s
+video28,accident,True,True,stopped_vehicles @ 7.1s
+video73,accident,False,False,
+video168,accident,True,True,stopped_vehicles @ 0.0s
+videox23_1,accident,False,False,
+video171,accident,False,False,
+video132,accident,False,False,
+videox8_2,accident,False,False,
+video110,accident,False,False,
+video66,accident,True,True,sudden_stop @ 4.65s
+videox5_1,accident,False,False,
+video156,accident,True,True,stopped_vehicles @ 0.0s
+video128,accident,True,True,stopped_vehicles @ 13.88s
+video69,accident,True,True,stopped_vehicles @ 0.71s
+videox16_2,accident,True,True,stopped_vehicles @ 0.0s
+video1,accident,True,True,stopped_vehicles @ 0.08s
+video60,accident,True,True,stopped_vehicles @ 6.4s
+video21,accident,False,False,
+videox14_2,accident,True,True,stopped_vehicles @ 4.36s
+video131,accident,False,False,
+videox30_1,accident,True,True,stopped_vehicles @ 0.0s
+video172,accident,True,True,sudden_stop @ 4.55s
+video187,accident,False,False,
+video129,accident,True,True,sudden_stop @ 3.57s
+negative_samples_441,normal,True,False,
+negative_samples_818,normal,False,False,
+20230818_acci-bg_111,normal,False,False,
+20220620_acci-bg13,normal,False,False,
+negative_samples_819,normal,False,False,
+20220518_acci-bg12,normal,True,True,stopped_vehicles @ 6.08s
+20230818_acci-bg_49,normal,False,False,
+negative_samples_140,normal,False,False,
+negative_samples_130,normal,False,False,
+negative_samples_526,normal,False,False,
+negative_samples_800,normal,True,True,stopped_vehicles @ 0.0s
+20230818_acci-bg_27,normal,True,False,
+20230818_acci-bg_107,normal,False,False,
+20220518_acci-bg48,normal,False,False,
+negative_samples_814,normal,False,False,
+20230818_acci-bg_115,normal,True,True,stopped_vehicles @ 0.0s
+20220518_acci-bg40,normal,False,False,
+20230818_acci-bg_145,normal,True,True,stopped_vehicles @ 0.0s
+negative_samples_522,normal,False,False,
+20220620_acci-bg35,normal,False,False,
+negative_samples_131,normal,False,False,
+negative_samples_444,normal,False,False,
+negative_samples_519,normal,False,False,
+negative_samples_446,normal,False,False,
+20220620_acci-bg44,normal,False,False,
+20230818_acci-bg_123,normal,False,False,
+negative_samples_525,normal,False,False,
+negative_samples_469,normal,False,False,
+negative_samples_449,normal,False,False,
+20230818_acci-bg_43,normal,False,False,

@@ -1,0 +1,11 @@
+.venv
+.git
+outputs
+data
+runs
+*.pt
+*.onnx
+*.mlpackage
+*.key
+*.crt
+**/__pycache__

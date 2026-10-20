@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+outputs/
+data/
+*.pt
+*.mlpackage
+*.onnx
+.DS_Store
+runs/
+*.key
+*.crt
+*.egg-info/

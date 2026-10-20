@@ -1,0 +1,11 @@
+[
+  {"model": "YOLO11n, COCO pretrained", "weights": "yolo11n.pt",
+   "val": {"mAP50": 0.538, "mAP50_95": 0.367, "per_class_mAP50": {"person": 0.814, "bicycle": 0.224, "car": 0.891, "motorcycle": 0.417, "bus": 0.845, "truck": 0.034}},
+   "val_deg": {"mAP50": 0.398, "mAP50_95": 0.264, "per_class_mAP50": {"person": 0.605, "bicycle": 0.085, "car": 0.833, "motorcycle": 0.171, "bus": 0.674, "truck": 0.02}}},
+  {"model": "+ fine-tuned on UA-DETRAC", "weights": "runs/detrac_nodeg/weights/best.pt",
+   "val": {"mAP50": 0.659, "mAP50_95": 0.48, "per_class_mAP50": {"car": 0.975, "motorcycle": 0.524, "bus": 0.912, "truck": 0.126, "bicycle": 0.557, "person": 0.859}},
+   "val_deg": {"mAP50": 0.548, "mAP50_95": 0.374, "per_class_mAP50": {"car": 0.954, "motorcycle": 0.353, "bus": 0.863, "truck": 0.096, "bicycle": 0.294, "person": 0.73}}},
+  {"model": "+ CCTV degradation", "weights": "runs/detrac_yolo11n/weights/best.pt",
+   "val": {"mAP50": 0.666, "mAP50_95": 0.478, "per_class_mAP50": {"car": 0.973, "motorcycle": 0.569, "bus": 0.929, "truck": 0.186, "bicycle": 0.497, "person": 0.842}},
+   "val_deg": {"mAP50": 0.591, "mAP50_95": 0.417, "per_class_mAP50": {"car": 0.967, "motorcycle": 0.516, "bus": 0.915, "truck": 0.101, "bicycle": 0.26, "person": 0.786}}}
+]

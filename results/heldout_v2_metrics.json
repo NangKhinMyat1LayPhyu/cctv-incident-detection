@@ -1,0 +1,41 @@
+{
+  "normal_hours": 0.096,
+  "v1": {
+    "detected": 20,
+    "false_alarm_clips": 3,
+    "recall": 0.5,
+    "precision": 0.87,
+    "fa_per_hour": 31.25,
+    "recall_ci95": [
+      0.35,
+      0.675
+    ],
+    "precision_ci95": [
+      0.75,
+      1.0
+    ],
+    "fa_per_hour_ci95": [
+      0.0,
+      72.061
+    ]
+  },
+  "v2": {
+    "detected": 20,
+    "false_alarm_clips": 1,
+    "recall": 0.5,
+    "precision": 0.952,
+    "fa_per_hour": 10.417,
+    "recall_ci95": [
+      0.35,
+      0.675
+    ],
+    "precision_ci95": [
+      0.857,
+      1.0
+    ],
+    "fa_per_hour_ci95": [
+      0.0,
+      35.913
+    ]
+  }
+}

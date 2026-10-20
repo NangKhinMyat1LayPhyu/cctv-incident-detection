@@ -1,0 +1,101 @@
+[
+  {
+    "label": "pytorch",
+    "device": "mps",
+    "batches": {
+      "1": {
+        "mean_ms": 6.31,
+        "p95_ms": 11.67,
+        "per_frame_ms": 6.31
+      },
+      "4": {
+        "mean_ms": 17.04,
+        "p95_ms": 17.59,
+        "per_frame_ms": 4.26
+      }
+    },
+    "peak_mb": 861.0,
+    "recall_vs_pytorch": 1.0,
+    "precision_vs_pytorch": 1.0
+  },
+  {
+    "label": "pytorch-cpu",
+    "device": "cpu",
+    "batches": {
+      "1": {
+        "mean_ms": 15.78,
+        "p95_ms": 16.14,
+        "per_frame_ms": 15.78
+      },
+      "4": {
+        "mean_ms": 52.96,
+        "p95_ms": 59.32,
+        "per_frame_ms": 13.24
+      }
+    },
+    "peak_mb": 758.0,
+    "recall_vs_pytorch": 1.0,
+    "precision_vs_pytorch": 1.0
+  },
+  {
+    "label": "onnx-cpu",
+    "device": "cpu",
+    "batches": {
+      "1": {
+        "mean_ms": 11.25,
+        "p95_ms": 12.28,
+        "per_frame_ms": 11.25
+      },
+      "4": {
+        "mean_ms": 80.03,
+        "p95_ms": 84.63,
+        "per_frame_ms": 20.01
+      }
+    },
+    "peak_mb": 820.0,
+    "recall_vs_pytorch": 1.0,
+    "precision_vs_pytorch": 1.0
+  },
+  {
+    "label": "onnx-coremlEP",
+    "device": "mps",
+    "batches": {
+      "1": {
+        "mean_ms": 10.05,
+        "p95_ms": 11.15,
+        "per_frame_ms": 10.05
+      }
+    },
+    "peak_mb": 840.0,
+    "recall_vs_pytorch": 0.93,
+    "precision_vs_pytorch": 0.956
+  },
+  {
+    "label": "coreml16",
+    "device": "cpu",
+    "batches": {
+      "1": {
+        "mean_ms": 5.31,
+        "p95_ms": 5.56,
+        "per_frame_ms": 5.31
+      }
+    },
+    "peak_mb": 767.0,
+    "recall_vs_pytorch": 0.942,
+    "precision_vs_pytorch": 0.961
+  },
+  {
+    "label": "coreml8",
+    "device": "cpu",
+    "batches": {
+      "1": {
+        "mean_ms": 5.36,
+        "p95_ms": 5.77,
+        "per_frame_ms": 5.36
+      }
+    },
+    "peak_mb": 771.0,
+    "recall_vs_pytorch": 0.921,
+    "precision_vs_pytorch": 0.946
+  }
+]

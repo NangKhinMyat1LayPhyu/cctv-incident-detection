@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      # The tests cover the pipeline logic on synthetic tracks: no model, GPU or videos needed,
+      # so the heavy dependencies (ultralytics, torch) are not installed here.
+      - name: Install
+        run: pip install numpy pandas opencv-python-headless pytest ruff fastapi python-multipart httpx
+      - name: Lint
+        run: ruff check .
+      - name: Test
+        run: pytest -q
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t incident-recon .
+      # Smoke test: the image starts and the package and its heavy dependencies import
+      - name: Run inside the image
+        run: |
+          docker run --rm incident-recon
+          docker run --rm --entrypoint python incident-recon -c "import ultralytics, torch, cv2, incident_recon.livecam, incident_recon.service; print('torch', torch.__version__, 'ultralytics', ultralytics.__version__)"
